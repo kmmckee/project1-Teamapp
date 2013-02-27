@@ -1,0 +1,226 @@
+
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+<br>
+     <img src="{{STATIC_URL}}img/logo.gif" style="position:absolute; left:50px; top:-15px; height:210px; width:170px;">
+   
+   
+   
+   <div class="navbar" style="box-shadow: 0px 3px 2px -2px rgb(35, 35, 35); margin-top:40px;">
+     <div class="navbar-inner">
+    <ul class="nav">
+    <li class="active" style="padding-left:100px;text-transform: uppercase; color:white; padding-top:12px;"><a href="#">Home</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Football</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Basketball</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Baseball</a></li>
+   
+    </ul>
+    <form class="navbar-search pull-right" style="padding-top:12px">
+    <input type="text" class="search-query" placeholder="Search"> 
+    </form>
+    </div> 
+    </div>
+   
+   
+   
+       <div class="well" style="margin-top:20px;">
+        <div class="container" style="float:left;">
+    
+    <!-- =======================================
+
+THE ACTUAL ORBIT SLIDER CONTENT 
+
+======================================= -->
+		<div id="featured" > 
+			<img src="{{STATIC_URL}}img/UNCvState.gif" data-caption="#htmlCaption1" />
+			<img src="{{STATIC_URL}}img/football.gif" data-caption="#htmlCaption2" />
+			<img src="{{STATIC_URL}}img/honorees.gif" data-caption="#htmlCaption3" />
+			<img src="{{STATIC_URL}}img/baseball.gif" data-caption="#htmlCaption4"/>
+			<img src="{{STATIC_URL}}img/lacrosse.gif" data-caption="#htmlCaption5"/>
+		</div>
+		<!-- Captions for Orbit -->
+		<span class="orbit-caption" id="htmlCaption1"><h1 style="padding-left:20px;">UNC vs. State Basketball Highlights</h1><a href="www.goheels.com/
+ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206504964" class="orbitHead">Remember back in early January when it seemed like the sky was falling? Don't look back now.</a> </span>
+		
+		<span class="orbit-caption" id="htmlCaption2"><h1 style="padding-left:20px;">2013 Football Schedule Released</h1> <a href="www.goheels.com/
+SportSelect.dbml?
+DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&SPID=12962&SPSID=667865" class="orbitHead">Seven home games highlight the 2013 North Carolina football schedule.</a> </span>
+		
+		<span class="orbit-caption" id="htmlCaption3"><h1 style="padding-left:20px;">Corrigan Honorees Announced</h1> <a href="www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206473811" class="orbitHead">Four student athletes selected as finalists for ACC award. </a> </span>
+		
+		<span class="orbit-caption" id="htmlCaption4"><h1 style="padding-left:20px;">Baseball Coach Fox Weekly Recap</h1> <a href="www.goheels.com/
+ViewArticle.dbml?
+DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206509262" class="orbitHead">Missed the latest baseball news? Check in with Coach Fox.</a> </span>															  
+		
+		<span class="orbit-caption" id="htmlCaption5"><h1 style="padding-left:20px;">Second Half Rally Lifts the Tar Heels</h1> <a href="www.goheels.com/PhotoAlbum.dbml?DB_OEM_ID=3350&PALBID=664248" class="orbitHead">Tar Heels stump Fairfield 10-9 </a> </span>
+		
+		
+		
+		</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="mainHeadlines" style="float:right;">
+    
+    <table  style=" background-color:rgb(144, 182, 221); float: right; font-size:11px; font-weight: bold;" cellpadding="7" cellspacing="2" width="300">
+<tr>
+<td class="dark" style="border-radius:0px 5px 0px 0px;"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206507371" class="headlines">Men's Basketball Tar Heels In the NBA Update</a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206497662" class="headlines">W Basketball: Ruffin-Pratt, Rolle Lift UNC Past State</a></td>
+</tr>
+<tr>
+<td class="dark"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206487847" class="headlines">UNC Beats NC State, 76-65</a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206502962" class="headlines">Baseball: UNC to Face St. John's Wednesday</a></td>
+</tr>
+<tr>
+<td class="dark"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206509176" class="headlines">DeShields Named State Farm/WBCA HS POY </a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206530160" class="headlines">UNC Celebrates Season, Announces Awards </a></td>
+</tr>
+<tr>
+<td class="dark"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206498316" class="headlines">Softball: UNC Ends Carolina Classic With Two Wins </a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206496849" class="headlines">Baseball: Tar Heels Walk Off To Sweep Stony Brook</a></td>
+</tr>
+<tr>
+<td class="dark"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206492902" class="headlines">Swim/Dive: UNC Surges To Third Place On Final Day</a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206494762" class="headlines">W. Lacrosse Tar Heel Lax Lessons 2013</a></td>
+</tr>
+<tr>
+<td class="dark" style="border-radius:0px 0px 5px 0px;"><a href="www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206541061"  class="headlines" >Women Goldfers 3rd in Golfstat Poll</a></td>
+</tr>
+<tr>
+<td><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206538478" class="headlines">Field Hockey Alumni Information</a></td>
+</tr>
+<tr>
+<td class="dark" style="border-radius:0px 0px 5px 0px;"><a href="http://www.goheels.com/ViewArticle.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206537760"  class="headlines" >U.S. U-20 MNT Earn World Cup Bid </a></td>
+</tr>
+<tr>
+<td style="border-radius:0px 0px 5px 0px;"><a href="http://www.goheels.com/"  class="headlines" style="float:right;">MORE HEADLINES</a></td>
+</tr>
+
+
+</table>
+       </div>
+       <div style="clear:both;"></div>
+       
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       <div class="well">
+        <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> VIDEOS</h4> 
+        <div style="display:inline-block;">
+        <a href="http://www.goheels.com/mediaPortal/player.dbml?&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/bballvid.gif" style="height:150px; width:215px; margin-right:7px; box-shadow: 2px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Men's Basketball: <br/>P.J. Hairston Feature</h6>
+        </div>
+        
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/mediaPortal/player.dbml?&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/fbvid.gif" style="height:150px; width:215px;margin-right:7px; box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Men's Football: <br/>2013 Schedule Preview</h6>
+         </div>
+         
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/mediaPortal/player.dbml?&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/wlaxvid.gif" style="height:150px; width:215px;margin-right:7px;box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Women's Lacrosse: <br/>Highlights vs. Northwestern</h6>
+         </div>
+          
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/mediaPortal/player.dbml?&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/baseballvid.gif" style="height:150px; width:215px;margin-right:7px;box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Men's Baseball: <br/>Stony Brook vs. UNC</h6>
+         </div>
+        
+        <a href="http://www.goheels.com/mediaPortal/player.dbml?&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350"><h5 style="color: rgb(198, 198, 198);float: right;">MORE VIDEOS</h5></a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       <div class="events">
+        <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> UPCOMING EVENTS</h4> 
+       <ul style="list-style: none;">
+        <li style="font-size:11px; margin-left:-26px; margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/8/2013 Track and Field: NCAA Indoor Championships </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/8/2013 Women's Golf Darisu Rucker Invitational</li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/8/2013 Baseball vs. Wake Forest </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Wrestling: ACC Championships </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif">3/9/2013 Men's Lacrosse vs. Princeton </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Softball vs. Boston College </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Men's Tennis vs. Texas Christian </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Women's Lacrosse vs. Virginia</li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Baseball vs. Wake Forest </li>
+        <li style="font-size:11px;margin-left:-26px;margin-bottom:4px;"><img src="{{STATIC_URL}}img/tarheel.gif"> 3/9/2013 Men's Basketball vs. Duke </li>
+        <li style="float: right;"><a href="http://www.goheels.com/main/CalendarSchedule.dbml?DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PAGEMO=1" style="color:rgb(198, 198, 198); font-weight:bold;">MORE EVENTS</a></li> 
+       </ul>
+              
+
+       </div>
+       
+       <div class="Twitter">
+        <h4> Twitter Feed </h4>
+       </div>
+       
+       <div class="ad">
+        <img src="{{STATIC_URL}}img/ad.gif" style="height:270px; width:300px;">
+       </div>
+       <div style="clear:both;"></div>
+       
+       
+       
+       
+       
+       <div class="well">
+        <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> PHOTO GALLERIES</h4> 
+        <div style="display:inline-block;">
+        <a href="http://www.goheels.com/PhotoAlbum.dbml?SITE=UNC&DB_OEM_ID=3350&PALBID=666949"><img src="{{STATIC_URL}}img/baseballpic.gif" style="height:150px; width:215px; margin-right:6px; box-shadow: 2px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Men's Baseball: <br/>UNC 9 - Stony Brook 8</h6>
+        </div>
+        
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/PhotoAlbum.dbml?SITE=UNC&DB_OEM_ID=3350&PALBID=667548"><img src="{{STATIC_URL}}img/fieldhockey.gif" style="height:150px; width:215px;margin-right:6px; box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Women's Field Hockey: <br/>Honored at Basketball game</h6>
+         </div>
+         
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/PhotoAlbum.dbml?SITE=UNC&DB_OEM_ID=3350&PALBID=665548"><img src="{{STATIC_URL}}img/wbball.gif" style="height:150px; width:215px;margin-right:6px;box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Women's Basketball: <br/>UNC v N.C. State</h6>
+         </div>
+          
+         <div style="display:inline-block;">
+        <a href="http://www.goheels.com/PhotoAlbum.dbml?SITE=UNC&DB_OEM_ID=3350&PALBID=666848"><img src="{{STATIC_URL}}img/softball.gif" style="height:150px; width:215px;margin-right:6px;box-shadow: 0px 4px 6px -2px rgb(35, 35, 35);"></a>
+            <h6> Women's Softball: <br/>UNC v Penn State</h6>
+         </div>
+        
+        <a href="http://www.goheels.com/PhotoAlbum_Archives.dbml?SITE=UNC&DB_OEM_ID=3350"><h5 style="color: rgb(198, 198, 198);float: right;">MORE PHOTOS</h5></a>
+      
+       </div>
+{% endblock %}

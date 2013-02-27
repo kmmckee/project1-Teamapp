@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> {{team.name }}</h1>
+<div class="well">
+<ul>
+    <li> {{ team.coach }}</li>
+    <li> {{ team.season }}</li> 
+    <li> {{ team.players }}</li>
+</ul>
+</div>
+
+
+
+<div class="roster">
+<table id="background-image">
+    <thead>
+    	<tr>
+        	<th scope="col">Player</th>
+            <th scope="col">Position</th>
+            <th scope="col">Year</th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+            
+        </tr>
+    </tfoot>
+    <tbody>
+    	<tr>
+        	<td>Player 1</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+        	<td>Player 2</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr>
+        	<td>Player 3</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+        	<td>JPlayer 4 </td>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+<div class="teamTwitter">
+    <h4> Twitter Feed</h4>
+    
+</div>
+<div style="clear:both;"></div>
+
+<div class="teamHeadlines">
+    <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> HEADLINES</h4>
+    
+    <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/teamHeadline1.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	<div class="teamHeadlinesInfo">
+	<a href="#"><h4>Lucas: The Sixth Man</h4><p>Leslie McDonald has contributed in multiple ways off the Tar Heel bench.</p> 
+    </div>
+	<div style="clear:both;"></div>
+    </div>
+    
+    <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206527360"><img src="{{STATIC_URL}}img/teamHeadline2.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px; float:left;"></a>
+	</div>
+	<div class="teamHeadlinesInfo">
+	<h4>Don't Look Back Now</h4><p>Remember back in early January when it seemed like the sky was falling? Don't look back now.</p></a>
+	</div>	 
+</div>
+    
+    <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+   <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><img src="{{STATIC_URL}}img/teamHeadline3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a>
+    </div>
+	<div class="teamHeadlinesInfo">
+    <h4>Tar Heels in the NBA</h4><p>North Carolina has an all-time high of 17 former Tar Heels playing in the NBA this season, many of whom are playing key roles wiht a variety of teams.</p></a>
+    </div>
+    </div>
+
+    <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206504362"><img src="{{STATIC_URL}}img/teamHeadline4.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a> 
+    </div>
+	<div class="teamHeadlinesInfo">
+    <h4>Bullock Leads In Win over Wolfpack</h4><p>UNC has been working all season to piece together a full 40 minutes of Carolina basketball.  Perhaps the biggest breakthrough came Saturday, facing NC State.</p>
+    </div>
+    </div>
+    
+    <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+    <a href="http://www.goheels.com/ViewArticle.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206480962"><img src="{{STATIC_URL}}img/teamHeadline5.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a> 	
+    </div>
+	<div class="teamHeadlinesInfo">
+    <h4>Lucas: Breaking Down the Matchups</h4><p>Roy Williams has some decisions to make with how he wants to defend the Wolfpack.</p>
+    </div>
+    </div>
+    
+</div>
+
+
+
+<div class="teamMultimedia">
+    <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> MULTIMEDIA</h4>
+    
+</div>
+<div style="clear:both;"></div>
+
+
+
+{% endblock %}
