@@ -11,7 +11,8 @@
 #featured { 
 	width: 600px;
 	height: 350px;
-	overflow: hidden; }
+	overflow: hidden;
+	}
 	
 #featured>img,  
 #featured>div,
@@ -19,6 +20,7 @@
 	width:600px;
 	height:350px;
 	display: none; }
+
 
 
 
@@ -217,4 +219,6 @@ h1{
 	html, body { margin: 0; padding: 0; }
 	 p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, strong, em, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, section {border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; }
 	table { border-collapse: collapse; border-spacing: 0; }
+	
+.orbit-slide {display:none}
 	

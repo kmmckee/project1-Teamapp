@@ -1,25 +1,48 @@
 {% extends "base.html" %}
 
 {% block content %}
+    
+<img src="{{STATIC_URL}}img/logo.gif" style="position:absolute; left:50px; top:-15px; height:210px; width:200px;">
+   
+   
+   
+   <div class="navbar" style="box-shadow: 0px 3px 2px -2px rgb(35, 35, 35); margin-top:40px;">
+     <div class="navbar-inner">
+    <ul class="nav">
+    <li class="active" style="padding-left:100px;text-transform: uppercase; color:white; padding-top:12px;"><a href="#">Home</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Football</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Basketball</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Baseball</a></li>
+   
+    </ul>
+    <form class="navbar-search pull-right" style="padding-top:12px">
+    <input type="text" class="search-query" placeholder="Search"> 
+    </form>
+    </div> 
+    </div>
+   
+   
 
-<h1> {{team.name }}</h1>
-<div class="well">
-<ul>
-    <li> {{ team.coach }}</li>
-    <li> {{ team.season }}</li> 
-    <li> {{ team.players }}</li>
-</ul>
-</div>
-
+<img src="{{STATIC_URL}}img/basketballgraphic.gif" style="height: 270px; width:960px; margin-top:40px; margin-bottom:20px;border-radius:4px 4px 4px 4px; box-shadow:0px 1px 1px rgba(0, 0, 0, 0.05) inset;">
 
 
 <div class="roster">
-<table id="background-image">
+   <ul>
+    <li> {{ team.coach }}</li>
+    <li> {{ team.season }}</li> 
+    <li> {{ player_list }}</li>
+</ul>
+   
+<table id="background-image" style="background-image:url('{{STATIC_URL}}img/table.gif'); background-repeat:no-repeat; background-position: bottom center; opacity:.8;">
     <thead>
     	<tr>
-        	<th scope="col">Player</th>
-            <th scope="col">Position</th>
-            <th scope="col">Year</th>
+	    <th scope="col">#</th>
+            <th scope="col">NAME</th>
+            <th scope="col">POS.</th>
+	    <th scope="col">HT</th>
+            <th scope="col">WT.</th>
+	    <th scope="col">YEAR</th>
+	    
         </tr>
     </thead>
     <tfoot>
@@ -28,26 +51,37 @@
         </tr>
     </tfoot>
     <tbody>
+	
     	<tr>
         	<td>Player 1</td>
             <td>a</td>
             <td>b</td>
+	      <td>a</td>
+            <td>b</td>
+	    <td>b</td>
         </tr>
-        <tr>
-        	<td>Player 2</td>
-            <td>c</td>
-            <td>d</td>
+        <tr class="odd">
+        	<td >Player 2</td>
+            <td >c</td>
+            <td >d</td><td >a</td>
+            <td >b</td>
+	    <td>b</td>
         </tr>
         <tr>
         	<td>Player 3</td>
             <td>e</td>
-            <td>f</td>
+            <td>f</td><td>a</td>
+            <td>b</td>
+	    <td>b</td>
         </tr>
-        <tr>
-        	<td>JPlayer 4 </td>
+        <tr class="odd">>
+        	<td >Player 4 </td>
             <td>g</td>
-            <td>h</td>
+            <td>h</td><td>a</td>
+            <td>b</td>
+	    <td>b</td>
         </tr>
+	
     </tbody>
 </table>
 </div>
@@ -68,44 +102,44 @@
 	</div>
 	
 	<div class="teamHeadlinesInfo">
-	<a href="#"><h4>Lucas: The Sixth Man</h4><p>Leslie McDonald has contributed in multiple ways off the Tar Heel bench.</p> 
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Lucas: The Sixth Man</h4><p style="color:#104e8b; font-size: 12px;">Leslie McDonald has contributed in multiple ways off the Tar Heel bench.</p> 
     </div>
 	<div style="clear:both;"></div>
     </div>
     
     <div class="teamHeadlinesStory">
 	<div class="teamHeadlinesPicture">
-	<a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206527360"><img src="{{STATIC_URL}}img/teamHeadline2.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px; float:left;"></a>
+	<a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206527360"><img src="{{STATIC_URL}}img/teamHeadline2.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px; float:left;"></a>
 	</div>
 	<div class="teamHeadlinesInfo">
-	<h4>Don't Look Back Now</h4><p>Remember back in early January when it seemed like the sky was falling? Don't look back now.</p></a>
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><h4 style="color:rgb(144, 182, 221); padding-top:15px;">Don't Look Back Now</h4><p style="color:#104e8b; font-size: 12px;">Remember back in early January when it seemed like the sky was falling? Don't look back now.</p></a>
 	</div>	 
 </div>
     
     <div class="teamHeadlinesStory">
 	<div class="teamHeadlinesPicture">
-   <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><img src="{{STATIC_URL}}img/teamHeadline3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a>
+   <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><img src="{{STATIC_URL}}img/teamHeadline3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
     </div>
 	<div class="teamHeadlinesInfo">
-    <h4>Tar Heels in the NBA</h4><p>North Carolina has an all-time high of 17 former Tar Heels playing in the NBA this season, many of whom are playing key roles wiht a variety of teams.</p></a>
+    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><h4 style="color:rgb(144, 182, 221); padding-top:5px;">Tar Heels in the NBA</h4><p style="color:#104e8b; font-size: 12px;">North Carolina has an all-time high of 17 former Tar Heels playing in the NBA this season, many of whom are playing key roles wiht a variety of teams.</p></a>
     </div>
     </div>
 
     <div class="teamHeadlinesStory">
 	<div class="teamHeadlinesPicture">
-    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206504362"><img src="{{STATIC_URL}}img/teamHeadline4.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a> 
+    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206504362"><img src="{{STATIC_URL}}img/teamHeadline4.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a> 
     </div>
 	<div class="teamHeadlinesInfo">
-    <h4>Bullock Leads In Win over Wolfpack</h4><p>UNC has been working all season to piece together a full 40 minutes of Carolina basketball.  Perhaps the biggest breakthrough came Saturday, facing NC State.</p>
+    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206504362"><h4 style="color:rgb(144, 182, 221);">Bullock Leads In Win over Wolfpack</h4><p style="color:#104e8b; font-size: 12px;">UNC has been working all season to piece together a full 40 minutes of Carolina basketball.  Perhaps the biggest breakthrough came Saturday.</p></a>
     </div>
     </div>
     
-    <div class="teamHeadlinesStory">
+    <div class="teamHeadlinesStory" style="border-bottom:none;">
 	<div class="teamHeadlinesPicture">
-    <a href="http://www.goheels.com/ViewArticle.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206480962"><img src="{{STATIC_URL}}img/teamHeadline5.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:220px;height:150px;"></a> 	
+    <a href="http://www.goheels.com/ViewArticle.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206480962"><img src="{{STATIC_URL}}img/teamHeadline5.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a> 	
     </div>
 	<div class="teamHeadlinesInfo">
-    <h4>Lucas: Breaking Down the Matchups</h4><p>Roy Williams has some decisions to make with how he wants to defend the Wolfpack.</p>
+    <a href="http://www.goheels.com/ViewArticle.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&ATCLID=206480962"><h4 style="color:rgb(144, 182, 221); padding-top:15px;">Lucas: Breaking Down the Matchups</h4><p style="color:#104e8b; font-size: 12px;">Roy Williams has some decisions to make with how he wants to defend the Wolfpack.</p></a>
     </div>
     </div>
     
@@ -116,9 +150,68 @@
 <div class="teamMultimedia">
     <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> MULTIMEDIA</h4>
     
+      <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=663350"><img src="{{STATIC_URL}}img/teamMulti1.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	<div class="teamHeadlinesInfo">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=663350"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Photo Gallery:</h4><p style="color:#104e8b; font-size: 12px;">Men's Basketball v N.C. State</p> 
+    </div>
+      </div>
+    
+       <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><img src="{{STATIC_URL}}img/teamMulti4.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	<div class="teamHeadlinesInfo">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Video:</h4><p style="color:#104e8b; font-size: 12px;">James McAdoo Press Conference </p> 
+    </div>
+       </div>
+    
+    
+       <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=650548"><img src="{{STATIC_URL}}img/teamMulti3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	
+	<div class="teamHeadlinesInfo">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=650548"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Photo Gallery:</h4><p style="color:#104e8b; font-size: 12px;">Michael Jordan As A Tar Heel </p> 
+    </div>
+	</div>
+    
+    
+       <div class="teamHeadlinesStory">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><img src="{{STATIC_URL}}img/teamMulti5.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	<div class="teamHeadlinesInfo">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Video:</h4><p style="color:#104e8b; font-size: 12px;">UNC vs. NC State Highlights</p> 
+    </div>
+	</div>
+    
+    
+       <div class="teamHeadlinesStory" style="border-bottom:none;">
+	<div class="teamHeadlinesPicture">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=657848"><img src="{{STATIC_URL}}img/teamMuti2.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:225px;height:130px;"></a>
+	</div>
+	
+	<div class="teamHeadlinesInfo">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=657848"><h4 style="color:rgb(144, 182, 221); padding-top:25px;">Photo Gallery:</h4><p style="color:#104e8b; font-size: 12px;">Men's Basketball At Georgia Tech</p> 
+    </div>
+	</div> 
+    
 </div>
 <div style="clear:both;"></div>
+ 
+<div class="Instagram">
+ <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);">#CAROLINABASKETBALL INSTAGRAM FEED</h4>
+<iframe src="http://snapwidget.com/in/?h=Y2Fyb2xpbmFiYXNrZXRiYWxsfGlufDEwMHw4fDN8fHllc3w1fGZhZGVPdXQ=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:920px; height: 345px;" ></iframe>
+</div>
 
-
+<div id="footer">This is footer</div>
 
 {% endblock %}

@@ -17,7 +17,7 @@ class Player(models.Model):
         ordering = ('name',)
         
     def __unicode__(self):
-        return U' %s %s' %(self.name)
+        return U' %s' %(self.name)
 
 
 class Team(models.Model):

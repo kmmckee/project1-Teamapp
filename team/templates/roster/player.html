@@ -1,20 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+    
+    <div class="well">
 <h2> {{player.name }}</h2>
 <p> Details</p>
 <ul>
-    <li> {{ player.number }}</li>
-    <li> {{ player.height }}</li>
-    <li> {{ player.weight }}</li>
-    <li> {{ player.year }}</li>
-    <li> {{ player.hometown }}</li>
-    <li> {{ player.high }}</li>
-    <li> {{ player.major }}</li>
-    <li> {{ player.bio }}</li> 
-    
-</ul>
+    <li> Number: {{ player.number }}</li>
+    <li> Height: {{ player.height }}</li>
+    <li> Weight: {{ player.weight }}</li>
+    <li> Year:  {{ player.year }}</li>
+    <li>Hometown: {{ player.hometown }}</li>
+    <li> High School: {{ player.high }}</li>
+    <li>Major: {{ player.major }}</li>        
+</ul>        
+    </div>
+ <div class="teamHeadlines">
+   <p> {{ player.bio }}</p>
+    </div>
+
 
 {% endblock %}
 
