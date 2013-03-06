@@ -3,15 +3,18 @@ from django.db import models
 # Create your models here.
 class Player(models.Model):
     name = models.CharField(unique=True, max_length=50)
+    last = models.CharField(unique=True, max_length=50)
     number = models.CharField(unique=True, max_length=3)
     position = models.CharField(unique=False, max_length=12)
     height = models.CharField(unique=False, max_length=12)
     weight = models.CharField(unique=False, max_length=12)
-    year = models.CharField(unique=False, null=True, max_length=3)
+    year = models.CharField(unique=False, null=True, max_length=10)
     hometown = models.CharField(unique=False, max_length=50)
     high = models.CharField(unique=False, max_length=50)
     major = models.CharField(unique=False, max_length=50)
-    bio = models.CharField(unique=True, max_length=900)
+    bio = models.CharField(unique=True, max_length=3900)
+    photo = models.CharField(unique=True, max_length=50)
+    career = models.CharField(unique=True, max_length=3900) 
     
     class Meta(object):
         ordering = ('name',)

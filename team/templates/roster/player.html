@@ -1,24 +1,147 @@
 {% extends "base.html" %}
-
+{% load url from future %}
 {% block content %}
     
-    <div class="well">
-<h2> {{player.name }}</h2>
-<p> Details</p>
-<ul>
-    <li> Number: {{ player.number }}</li>
-    <li> Height: {{ player.height }}</li>
-    <li> Weight: {{ player.weight }}</li>
-    <li> Year:  {{ player.year }}</li>
-    <li>Hometown: {{ player.hometown }}</li>
-    <li> High School: {{ player.high }}</li>
-    <li>Major: {{ player.major }}</li>        
-</ul>        
+     <img src="{{STATIC_URL}}img/logo.gif" style="position:absolute; left:50px; top:-20px; height:240px; width:240px;">
+   
+   
+   
+   <div class="navbar" style="box-shadow: 0px 3px 2px -2px rgb(35, 35, 35); margin-top:55px;">
+     <div class="navbar-inner">
+    <ul class="nav">
+    <li class="active" style="padding-left:135px;text-transform: uppercase; letter-spacing: 1px; color:white; padding-top:12px; font-family: 'League'; font-size: 22px;"><a href="{% url 'team_home'  %}">Home</a></li>
+    <li style="text-transform: uppercase; letter-spacing: 1px; color:white;padding-top:12px; font-family: 'League'; font-size: 22px;"><a href="#">Men's Football</a></li>
+    <li style="text-transform: uppercase; letter-spacing: 1px; color:white;padding-top:12px; font-family: 'League'; font-size: 22px;"><a href="{% url 'team_team' 2  %}">Men's Basketball</a></li>
+    <li style="text-transform: uppercase; letter-spacing: 1px; color:white;padding-top:12px; font-family: 'League'; font-size: 22px;"><a href="#">Men's Baseball</a></li>
+   
+    </ul>
+    <form class="navbar-search pull-right" style="padding-top:12px">
+    <input type="text" class="search-query" placeholder="Search"> 
+    </form>
+    </div> 
     </div>
- <div class="teamHeadlines">
-   <p> {{ player.bio }}</p>
+   
+
+   <p style="color:rgb(224, 224, 224);font-size:54px; padding-top:40px; margin-left:20px;font-family: 'League';"> PLAYER ROSTER</p>
+
+
+<div class="socialmedia">
+<span class='st_facebook_hcount' displayText='Facebook'></span>
+<span class='st_sharethis_hcount' displayText='ShareThis'></span>
+<span class='st_twitter_hcount' displayText='Tweet'></span>
+<span class='st_pinterest_hcount' displayText='Pinterest'></span>
+<span class='st_email_hcount' displayText='Email'></span>
+
+</div>
+
+<div class="playerextra">
+
+   <div class="playernews">
+    <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);font-family: 'League'; font-size:28px; background-image: "> LATEST NEWS</p>
+     <div class="playerHeadlinesStory">
+	<div class="playerHeadlinesPicture">
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><img src="{{STATIC_URL}}img/teamHeadline1.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px;"></a>
+	</div>
+	
+	<div class="playerHeadlinesInfo">
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><h4 style="color:rgb(144, 182, 221); font-size: 14px;">Lucas: The Sixth Man</h4><p style="color:#104e8b; font-size: 11px;">Leslie McDonald has contributed in multiple ways off the Tar Heel bench.</p> 
+    </div>
+	<div style="clear:both;"></div>
+    </div>
+    
+    <div class="playerHeadlinesStory">
+	<div class="playerHeadlinesPicture">
+	<a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206527360"><img src="{{STATIC_URL}}img/teamHeadline2.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px; float:left;"></a>
+	</div>
+	<div class="playerHeadlinesInfo">
+	<a href="http://www.goheels.com/ViewArticle.dbml?ATCLID=206538479&DB_OEM_ID=3350"><h4 style="color:rgb(144, 182, 221);font-size: 14px;">Don't Look Back Now</h4><p style="color:#104e8b; font-size: 11px;">Remember back in early January when it seemed like the sky was falling? Don't look back now.</p></a>
+	</div>	 
+</div>
+    
+    <div class="playerHeadlinesStory" style="margin-bottom:60px; border-bottom: none;">
+	<div class="playerHeadlinesPicture">
+   <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><img src="{{STATIC_URL}}img/teamHeadline3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px;"></a>
+    </div>
+	<div class="playerHeadlinesInfo">
+    <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=206507371"><h4 style="color:rgb(144, 182, 221);font-size: 14px; ">Tar Heels in the NBA</h4><p style="color:#104e8b; font-size: 11px;">North Carolina has an all-time high of 17 former Tar Heels playing in the NBA this season, many of whom are playing key roles.</p></a>
+    </div>
+   </div>
+    
+    <div class="playermultimedia">
+ <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);font-family: 'League'; font-size:28px;">LATEST MULTIMEDIA</p>   
+    <div class="playerHeadlinesStory">
+	<div class="playerHeadlinesPicture">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=663350"><img src="{{STATIC_URL}}img/teamMulti1.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px;"></a>
+	</div>
+	
+	<div class="playerHeadlinesInfo">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=663350"><h4 style="color:rgb(144, 182, 221); font-size:14px; padding-top:15px;">Photo Gallery:</h4><p style="color:#104e8b; font-size: 11px;">Men's Basketball v N.C. State</p> 
+    </div>
+      </div>
+    
+       <div class="playerHeadlinesStory">
+	<div class="playerHeadlinesPicture">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><img src="{{STATIC_URL}}img/teamMulti4.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px;"></a>
+	</div>
+	
+	<div class="playerHeadlinesInfo">
+	<a href="http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=668156"><h4 style="color:rgb(144, 182, 221); font-size:14px;padding-top:15px;">Video:</h4><p style="color:#104e8b; font-size: 11px;">James McAdoo Press Conference </p> 
+    </div>
+       </div>
+    
+    
+       <div class="playerHeadlinesStory" style="border-bottom: none;">
+	<div class="playerHeadlinesPicture">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=650548"><img src="{{STATIC_URL}}img/teamMulti3.gif" style="box-shadow: 2px 4px 6px -2px rgb(35, 35, 35); width:140px;height:80px;"></a>
+	</div>
+	<div class="playerHeadlinesInfo">
+	<a href="http://www.goheels.com/PhotoAlbum.dbml?SPSID=668156&SPID=12965&DB_LANG=C&SITE=UNC&DB_OEM_ID=3350&PALBID=650548"><h4 style="color:rgb(144, 182, 221);font-size:14px; padding-top:15px; ">Photo Gallery:</h4><p style="color:#104e8b; font-size: 11px;">Michael Jordan As A Tar Heel </p> </a>
+    </div>
+    </div>
+       </div>
+       </div>
+       
+    </div> 
+   
+    <div class="playerinfo" style="width:550px; margin-left:20px; height:270px;padding-top:5px; background-image:url('{{STATIC_URL}}{{ player.photo }}');background-repeat:no-repeat; background-position: right; ">
+    
+   
+
+    <h1 style="color:#8fb6dd;padding-top:10px;font-family: 'League';font-size:45px; display: inline-block; margin-right:-2px; line-height: 50px; padding-left:20px;">{{ player.number }}</h1>
+    <p style="font-family: 'League'; text-transform:uppercase; font-size:45px; display: inline-block; color:white;" > {{player.name }}</h1>
+    <br/>
+    <p style="text-transform: uppercase;font-family: 'League'; font-size:45px; color:#8fb6dd; margin-top:-21px;padding-left:20px;" > {{player.last }}</h1>
+
+<ul style="display:inline-block; list-style: none;">    
+    <li style="padding:5px;font-weight: bold; color:white;"> Height: </li>
+    <li style="padding:5px;font-weight: bold; color:white;"> Weight:</li>
+    <li style="padding:5px;font-weight: bold; color:white;"> Year: </li>
+    <li style="padding:5px;font-weight: bold; color:white;">Hometown:</li>
+    <li style="padding:5px;font-weight: bold; color:white;"> High School:</li>
+    <li style="padding:5px;font-weight: bold; color:white;">Major:</li>        
+</ul>
+
+<ul style="display:inline-block; list-style: none;">    
+    <li style="padding:5px; color:white;"> {{ player.height }}</li>
+    <li style="padding:5px; color:white;">  {{ player.weight }}</li>
+    <li style="padding:5px; color:white;"> {{ player.year }}</li>
+    <li style="padding:5px; color:white;">{{ player.hometown }}</li>
+    <li style="padding:5px; color:white;"> {{ player.high }}</li>
+    <li style="padding:5px; color:white;">{{ player.major }}</li>        
+</ul>    
     </div>
 
 
+ <div class="playerbio" >
+    <p style="color: rgb(198, 198, 198); border-bottom: 1px solid rgb(204, 204, 204); font-family: 'League'; font-size:24px;">CAREER HIGHLIGHTS</p>
+   <p style="font-size:14px;line-height: 18px;"> {{ player.career }}</p>
+   <br/>
+ <p style="color: rgb(198, 198, 198);border-bottom: 1px solid rgb(204, 204, 204); font-family: 'League'; font-size:24px;">PERSONAL</p>
+
+   <p style="font-size:14px; line-height: 18px;"> {{ player.bio }}</p>
+    </div>
+  
+
+       
 {% endblock %}
 

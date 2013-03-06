@@ -4,30 +4,47 @@
     <head>
         <title> {% block title %}Project 1{% endblock %} </title>
         <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{STATIC_URL}}css/orbit-1.2.3.css">
-	    <link rel="stylesheet" href="{{STATIC_URL}}css/demo-style.css">
+        <link href="{{STATIC_URL}}css/orbit-1.2.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{STATIC_URL}}css/agile_carousel.css">
                 
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="{{STATIC_URL}}js/bootstrap.min.js"></script> 	
-        <script type="text/javascript" src="{{STATIC_URL}}js/jquery.orbit-1.2.3.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+        <script src="{{STATIC_URL}}js/agile_carousel.alpha.js"></script>
     
 	<!-- Attach necessary JS -->
-		
-			
+	    
+    <script type="text/javascript">
     
-      <style type="text/css">
-			         .timer { display: none !important; }
-			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
-			    </style>
-			<![endif]-->
-		
-		<!-- Run the plugin -->
-		<script type="text/javascript">
-			$(window).load(function() {
-				$('#featured').orbit();
-			});
-		</script>
-    
+    $.getJSON("{{STATIC_URL}}js/agile_carousel_data.php", function(data) {
+        $(document).ready(function(){
+            $("#flavor_1").agile_carousel({
+                
+                // required settings
+                
+                carousel_data: data,
+                carousel_outer_height: 350,
+                carousel_height: 350,
+                slide_height: 350,
+                carousel_outer_width: 615,
+                slide_width: 615,
+                                                
+                // end required settings
+                                                
+                transition_type: "fade",
+                transition_time: 800,
+                timer: 3000,
+                continuous_scrolling: true,
+                control_set_1: "numbered_buttons"
+            });
+        });
+    });
+ </script>
+
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "908d8e7b-f450-4a88-87fb-f5bee2878a07", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
     </head>
     <body>
         <div id="wrap">

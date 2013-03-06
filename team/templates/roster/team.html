@@ -1,18 +1,18 @@
 {% extends "base.html" %}
-
+{% load url from future %}
 {% block content %}
     
-<img src="{{STATIC_URL}}img/logo.gif" style="position:absolute; left:50px; top:-15px; height:210px; width:200px;">
+ <img src="{{STATIC_URL}}img/logo.gif" style="position:absolute; left:50px; top:-20px; height:240px; width:240px;">
    
    
    
-   <div class="navbar" style="box-shadow: 0px 3px 2px -2px rgb(35, 35, 35); margin-top:40px;">
+   <div class="navbar" style="box-shadow: 0px 3px 2px -2px rgb(35, 35, 35); margin-top:55px;">
      <div class="navbar-inner">
     <ul class="nav">
-    <li class="active" style="padding-left:100px;text-transform: uppercase; color:white; padding-top:12px;"><a href="#">Home</a></li>
-    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Football</a></li>
-    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Basketball</a></li>
-    <li style="text-transform: uppercase; color:white;padding-top:12px"><a href="#">Men's Baseball</a></li>
+    <li class="active" style="padding-left:135px;text-transform: uppercase; color:white;letter-spacing: 1px;  padding-top:12px; font-family: 'League'; font-size: 22px;"><a href="{% url 'team_home'  %}">Home</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px; letter-spacing: 1px; font-family: 'League'; font-size: 22px;"><a href="#">Men's Football</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px;letter-spacing: 1px;  font-family: 'League'; font-size: 22px;"><a href="#">Men's Basketball</a></li>
+    <li style="text-transform: uppercase; color:white;padding-top:12px;letter-spacing: 1px;  font-family: 'League'; font-size: 22px;"><a href="#">Men's Baseball</a></li>
    
     </ul>
     <form class="navbar-search pull-right" style="padding-top:12px">
@@ -23,21 +23,20 @@
    
    
 
-<img src="{{STATIC_URL}}img/basketballgraphic.gif" style="height: 270px; width:960px; margin-top:40px; margin-bottom:20px;border-radius:4px 4px 4px 4px; box-shadow:0px 1px 1px rgba(0, 0, 0, 0.05) inset;">
+<img src="{{STATIC_URL}}img/basketballgraphic.gif" style="height: 270px; width:960px; margin-top:40px; margin-bottom:20px;border-radius:4px 4px 4px 4px; box-shadow:0px 0px 3px rgb(102, 102, 102); background-image: -moz-linear-gradient(center top , white, rgb(239, 239, 239));">
 
 
 <div class="roster">
-   <ul>
-    <li> {{ team.coach }}</li>
-    <li> {{ team.season }}</li> 
-    <li> {{ player_list }}</li>
-</ul>
+ 
+ <p style="color:rgb(224, 224, 224);font-size:54px; padding-top:20px; margin-left:20px;font-family: 'League';"> PLAYER ROSTER</p>
+
    
-<table id="background-image" style="background-image:url('{{STATIC_URL}}img/table.gif'); background-repeat:no-repeat; background-position: bottom center; opacity:.8;">
+<table id="background-image" style="background-image:url('{{STATIC_URL}}img/table.gif'); background-repeat:no-repeat; background-position: bottom center; opacity:.8;"> 
     <thead>
     	<tr>
 	    <th scope="col">#</th>
-            <th scope="col">NAME</th>
+            <th scope="col">FIRST</th>
+	     <th scope="col">LAST</th>
             <th scope="col">POS.</th>
 	    <th scope="col">HT</th>
             <th scope="col">WT.</th>
@@ -45,44 +44,23 @@
 	    
         </tr>
     </thead>
-    <tfoot>
-    	<tr>
-            
-        </tr>
-    </tfoot>
-    <tbody>
+      <tbody>
 	
-    	<tr>
-        	<td>Player 1</td>
-            <td>a</td>
-            <td>b</td>
-	      <td>a</td>
-            <td>b</td>
-	    <td>b</td>
-        </tr>
-        <tr class="odd">
-        	<td >Player 2</td>
-            <td >c</td>
-            <td >d</td><td >a</td>
-            <td >b</td>
-	    <td>b</td>
-        </tr>
-        <tr>
-        	<td>Player 3</td>
-            <td>e</td>
-            <td>f</td><td>a</td>
-            <td>b</td>
-	    <td>b</td>
-        </tr>
-        <tr class="odd">>
-        	<td >Player 4 </td>
-            <td>g</td>
-            <td>h</td><td>a</td>
-            <td>b</td>
-	    <td>b</td>
-        </tr>
+    	{{ htmlVar|safe }}
 	
     </tbody>
+    <tfoot>
+    	<tr>
+            <th> </th>
+	    <th> </th>
+	    <th> </th>
+	    <th> </th>
+	    <th> </th>
+	    <th> </th>
+	    <th>Coach:  {{ team.coach }}</th>
+        </tr>
+    </tfoot>
+  
 </table>
 </div>
 
@@ -94,7 +72,7 @@
 <div style="clear:both;"></div>
 
 <div class="teamHeadlines">
-    <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> HEADLINES</h4>
+    <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198); font-family: 'League'; font-size:32px;"> HEADLINES</p>
     
     <div class="teamHeadlinesStory">
 	<div class="teamHeadlinesPicture">
@@ -148,7 +126,7 @@
 
 
 <div class="teamMultimedia">
-    <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);"> MULTIMEDIA</h4>
+    <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);font-family: 'League'; font-size:32px;"> MULTIMEDIA</p>
     
       <div class="teamHeadlinesStory">
 	<div class="teamHeadlinesPicture">
@@ -208,10 +186,70 @@
 <div style="clear:both;"></div>
  
 <div class="Instagram">
- <h4 style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);">#CAROLINABASKETBALL INSTAGRAM FEED</h4>
-<iframe src="http://snapwidget.com/in/?h=Y2Fyb2xpbmFiYXNrZXRiYWxsfGlufDEwMHw4fDN8fHllc3w1fGZhZGVPdXQ=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:920px; height: 345px;" ></iframe>
+ <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);font-family: 'League'; font-size:32px;">#CAROLINABASKETBALL INSTAGRAM FEED</p>
+<iframe src="http://snapwidget.com/in/?h=Y2Fyb2xpbmFiYXNrZXRiYWxsfGlufDExMHw3fDN8fHllc3w1fGZhZGVPdXQ=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:875px; height: 375px" ></iframe>
 </div>
 
-<div id="footer">This is footer</div>
+
+       
+       <div id="footer" class="class_box_shadow">             	
+              <img src="{{STATIC_URL}}img/school.gif" style="display:inline-block; margin-left:15px; width:190px; height:70px;">
+             
+             <ul style="display:inline-block; list-style:none;">
+                <li style="font-family: 'League';font-size:18px; color:#777; border-bottom: 1px solid rgb(198, 198, 198); margin-bottom: 2px; margin-top:5px; padding-right:40px;">TEAMS</li>
+                <a href="#"><li style="font-size:12px;"> Basketball</li></a>
+                <a href="#"><li style="font-size:12px;">Football</li></a>
+                <a href="#"><li style="font-size:12px;">Baseball</li></a>
+                <a href="#"><li style="font-size:12px;"> Cross Country</li></a>
+                <a href="#"><li style="font-size:12px;"> Tennis</li></a>
+                <a href="#"><li style="font-size:12px;"> Softball</li></a>
+             </ul>
+             
+             <ul style="display:inline-block; list-style:none;border-top: 1px solid rgb(198, 198, 198); margin-left:0; padding-right:40px; padding-top:2px; "> 
+                <a href="#"><li style="font-size:12px; "> Golf</li></a>
+                <a href="#"><li style="font-size:12px;">Lacrosse</li></a>
+                <a href="#"><li style="font-size:12px;">Track & Field</li></a>
+                <a href="#"><li style="font-size:12px;"> Rowing</li></a>
+                <a href="#"><li style="font-size:12px;"> Soccer</li></a>
+                <a href="#"><li style="font-size:12px;"> Field Hockey</li></a>
+             </ul>
+             
+             <ul style="display:inline-block; list-style:none; border-top: 1px solid rgb(198, 198, 198); margin-left:0; padding-top:2px;  "> 
+                <a href="#"><li style="font-size:12px;"> Volleyball</li></a>
+                <a href="#"><li style="font-size:12px;">Swim & Dive</li></a>
+                <a href="#"><li style="font-size:12px;">Fencing</li></a>
+                <a href="#"><li style="font-size:12px;"> Gynmastics</li></a>
+                <a href="#"><li style="font-size:12px;"> Cheerleading</li></a> 
+                <a href="#"><li style="font-size:12px;"> Other</li></a>
+             </ul>
+             
+             <ul style="display:inline-block; list-style:none; margin-left:30px;">
+                <li style="font-family: 'League';font-size:18px; color:#777; border-bottom: 1px solid rgb(198, 198, 198); margin-bottom: 2px; margin-top:5px;">INFO</li>
+                <a href="#"><li style="font-size:12px;"> Camps</li></a>
+                <a href="#"><li style="font-size:12px;">Tickets</li></a>
+                <a href="#"><li style="font-size:12px;">Seating Charts</li></a>
+                <a href="#"><li style="font-size:12px;"> UNC Online Store</li></a>
+                <a href="#"><li style="font-size:12px;"> UNC Photo Store</li></a>
+                <a href="#"><li style="font-size:12px;"> Mobile</li></a>
+             </ul>
+             
+             <ul style="display:inline-block; list-style:none; padding-right:22px;">
+                <li style="font-family: 'League';font-size:18px;  color:#777; border-bottom: 1px solid rgb(198, 198, 198); margin-bottom: 2px; margin-top:5px;">MEDIA</li>
+                <a href="#"><li style="font-size:12px;"> GoHeelsTV</li></a>
+                <a href="#"><li style="font-size:12px;">Photo Galleries</li></a>
+                <a href="#"><li style="font-size:12px;">News Feeds (RSS)</li></a>
+                <a href="#"><li style="font-size:12px;"> Facebook</li></a>
+                <a href="#"><li style="font-size:12px;"> Flickr</li></a>
+                <a href="#"><li style="font-size:12px;">Twitter</li></a>
+             </ul>
+             
+             <ul style="display:inline-block; list-style:none; margin-left:-5px;">
+                <li><a href="#"><img src="{{STATIC_URL}}img/Nike.gif" alt="share" style="height:20px; width 50px; padding-bottom:15px; padding-left:25px; " /></a></li>
+                <li><a href="#"><img src="{{STATIC_URL}}img/Share.png" alt="share" style="height:30px; width 50px;" /></a></li>
+             </ul> 
+             
+          <!-- end #FooterLogout --></div>
+                
+       
 
 {% endblock %}

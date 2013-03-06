@@ -5,7 +5,8 @@
       "pk": "1",
       "model": "team.Player",
       "fields": {
-         "name": "Joel James",
+         "name": "Joel",
+         "last": "James", 
          "number": "0",
          "position": "Forward",
          "height": "6'10",
@@ -14,7 +15,9 @@
          "hometown": "West Palm Beach, Fla.",
          "high": "Dwyer",
          "major": "Undeclared",
-         "bio": "PERSONAL: Joel Njonjo James is the son of Cassandra Brown - Born on Jan. 22, 1994, in West Palm Beach, Fla. Has yet to declare a major"
+         "photo": "img/players/JJames.gif", 
+         "bio": "Joel Njonjo James is the son of Cassandra Brown.  Born on Jan. 22, 1994, in West Palm Beach, Fla. Has yet to declare a major.",
+         "career": "Played for coach Fred Ross at William T. Dwyer High School in Palm Beach Gardens, Fla. Averaged 15 points, 12.5 rebounds and 2.3 blocked shots per game and shot 63 percent from the floor as a senior. Played in the All-American Championship post-season all-star game in New Orleans. Attended the U.S. U-18 national team training camp in Colorado Springs in June 2012. Won a state championship as a junior. Did not play organized basketball until his sophomore year."
   }
 },
 
@@ -23,7 +26,8 @@
   "pk": "2",
     "model": "team.Player",
     "fields": {
-      "name": "Dexter Strickland",
+      "name": "Dexter",
+      "last": "Strickland" , 
       "number": "1",
       "position": "Guard",
       "height": "6'3",
@@ -32,14 +36,17 @@
       "hometown": "Rahway, N.J.",
       "high": "St. Patrick",
       "major": "Communications",
-      "bio": "PERSONAL: Son of Dexter L. and Sheronne Strickland ? Born Dexter Terrez Strickland on Oct. 1, 1990, in Newark, N.J. ? Majoring in communication studies."
-  }
+       "photo": "img/players/DStrickland.gif", 
+      "bio": "Son of Dexter L. and Sheronne Strickland. Born Dexter Terrez Strickland on Oct. 1, 1990, in Newark, N.J. Majoring in communication studies.",
+      "career": "Third on the team in steals with 33. Averaged 17.4 minutes a game playing both the point and two-guard. Learned to play point guard after playing mostly shooting guard in high school. Made four starts at the two earlier in mid-season. Had 71 assists and 61 turnovers. Had more assists than turnovers in 17 games, including four of five NIT games. Made 27 of his last 34 from the free throw line. Made 8 of 33 from three-point range (made one three-pointer in the last 14 games). Averaged 5.8 points with a combined 11 assists and five turnovers in the NIT. Scored six points and had three assists, no turnovers and two steals in NIT semifinal win over Rhode Island. Had eight points and three assists at UAB, making a pair of free throws with 20 seconds to play to secure the win. Scored eight points with two assists and no turnovers at Mississippi State. Helped spark the first-half comeback from 12 points down. Made three field goals in Starkville, the most since Feb. 13. Was his first turnover-free stint in 15 games. Had seven points and two assists against William and Mary, going 4 for 4 from the free throw line late in the game. With UNC trailing 72-69 with 3:43 to play, he made a pair then hit two more with 2:34 to play to give the Tar Heels the lead for good. Had five points and three rebounds in win over Miami, making his first three-pointer in seven games. Scored 11 points in the home win over NC State (making 5 of 6 from the free throw line)."
+    }
 },
 {
   "pk": "3",
     "model": "team.Player",
     "fields": {
-      "name": "Leslie McDonald",
+      "name": "Leslie",
+      "last": "McDonald", 
       "number": "2",
       "position": "Guard",
       "height": "6'5",
@@ -48,14 +55,17 @@
       "hometown": "Memphis, Tenn.",
       "high": "Briarcrest Christian School",
       "major": "Communications",
-      "bio": "PERSONAL: Born Leslie Vernard McDonald on Feb. 4, 1991, in Memphis ? Son of Leslie Sr. and Wanda McDonald ? Majoring in communication studies."
-  }
+       "photo": "img/players/LMcDonald.gif", 
+      "bio": "Born Leslie Vernard McDonald on Feb. 4, 1991, in Memphis. Son of Leslie Sr. and Wanda McDonald. Majoring in communication studies.",
+      "career": "Scored seven key first-half points in win at Mississippi State, helping UNC to a 36-33 halftime advantage. Hit a clutch three-pointer in the NIT over William and Mary. Trailing 59-55, he hit a three to pull within a point. Was CBS's player of the game in the win at Wake Forest as he scored a season-high 16 points. Had season highs for points, field goals, field goal attempts, three-pointers, three-point attempts and minutes in Winston-Salem. Was his second game scoring in double figures, first in ACC play, and the first time as a Tar Heel he led the team in scoring. Made 6 of 14 from the floor (2 of 5 3FG). Scored nine points in the first half helping Carolina to a 32-28 lead at the break. Hit a three-pointer with 12:27 to play, moments after the Deacs had taken their one and only lead of the second half on a three by Al-Farouq Aminu. Later, Wake cut UNC's lead to three (from 11), but McDonald scored on a driving layup with 51 seconds to play to give UNC a 73-68 lead. Then he sealed the win by taking a charge. Went 4 for 4 from the line and netted seven points against FSU. Scored five of his seven points in the second half in the home win over NC State. Three-pointer from the corner gave UNC a 53-45 lead, then added a pair of free throws to up the lead to 10 for the first time. Was more points than he had scored in his previous five ACC games combined. Made two three-pointers and connected on a pair of clutch free throws for eight points in the loss to Georgia Tech."
+     }
 },
 {
   "pk": "4",
     "model": "team.Player",
     "fields": {
-      "name": "Wade Moody",
+      "name": "Wade",
+      "last": "Moody", 
       "number": "3",
       "position": "Guard",
       "height": "6'0",
@@ -64,14 +74,17 @@
       "hometown": "Mount Airy, N.C.",
       "high": "Mount Airy",
       "major": "Management and Society",
-      "bio": "PERSONAL: Robert Wade Moody is the son of Bob and Kathy Moody ... Born on September 6, 1991, in Mount Airy, N.C. ... Majoring in Management and Society."
-  }
+       "photo": "img/players/WMoody.gif", 
+      "bio": "Robert Wade Moody is the son of Bob and Kathy Moody. Born on September 6, 1991, in Mount Airy, N.C. Majoring in Management and Society.",
+    "career": "Played three years of varsity basketball at Mount Airy High School and twice earned all-conference honors under Coach Kevin Spainhour. Averaged 12 points and four assists per game for his career, including 20 ppg as a senior. Led Mount Airy to two conference championships.  Also played a year of varsity baseball. Member of the National Honor Society and the Vocational Honor Society. Also involved in Young Life. Senior class president."
+    }
 },
 {
   "pk": "5",
     "model": "team.Player",
     "fields": {
-      "name": "Luke Davis",
+      "name": "Luke",
+      "last": "Davis", 
       "number": "4",
       "position": "Guard",
       "height": "6'0",
@@ -80,14 +93,17 @@
       "hometown": "Raleigh, N.C.",
       "high": "Ravenscroft",
       "major": "Sociology",
-      "bio": "PERSONAL:Luke Dickson Davis is the son of Pete and Debbie Davis ? Born on April 9, 1991, in Raleigh, N.C. ? Majoring in sociology."
+       "photo": "img/players/LDavis.gif", 
+      "bio": "Luke Dickson Davis is the son of Pete and Debbie Davis. Born on April 9, 1991, in Raleigh, N.C. Majoring in sociology.",
+    "career": "Played for Coach Kevin Billerman at Ravenscroft High School. Earned first-team all-state honors. Led Ravenscroft to the state finals in 2009. Teammate of Duke forward Ryan Kelly. Also attended Broughton High School. "
   }
 },
 {
   "pk": "6",
     "model": "team.Player",
     "fields": {
-      "name": "Marcus Paige",
+      "name": "Marcus",
+      "last": "Paige", 
       "number": "5",
       "position": "Guard",
       "height": "6'0.5",
@@ -96,14 +112,17 @@
       "hometown": "Marion, Iowa",
       "high": "Linn-Mar",
       "major": "Undeclared",
-      "bio": "PERSONAL: Marcus Taylor Paige is the son of Ellis & Sherryl Paige ? His sister plays basketball at the University of Wisconsin ? Born on Sept. 11, 1993, in Cedar Rapids, Iowa ? Has yet to declare a major"
+       "photo": "img/players/MPaige.gif", 
+      "bio": "Marcus Taylor Paige is the son of Ellis & Sherryl Paige. His sister plays basketball at the University of Wisconsin. Born on Sept. 11, 1993, in Cedar Rapids, Iowa. Has yet to declare a major.",
+     "career": "Should compete for playing time at point guard with the departure of the record-setting Kendall Marshall to the NBA. Should combine with senior Dexter Strickland to play most of the point guard minutes for Carolina in 2012-13.  Is left-handed. Played for coach Chris Robertson at Linn-Mar High School in his hometown of Marion, Iowa. Parade All-America. Played in the McDonald?s All-Star Game (had seven assists). Invited to play in the Jordan Brand Classic and Nike Hoop Summit but was unable to play due to a stress fracture in his left foot. Averaged 28.1 points as a senior, leading a young team to a 20-6 record and the semifinals of the state tournament. Set the school?s career scoring record. Scored a personal-best 49 points against CR Kennedy in the state playoffs. Also had a 46-point game against CR Prairie. As a junior, he averaged 17.7 points and led Linn Mar to an undefeated season and the 2011 4-A state championship. Earned both all-state and state tournament honors in three different seasons. Member of the honor roll in all four years. "
   }
 },
 {
    "pk": "7",
     "model": "team.Player",
     "fields": {
-      "name": "Brice Johnson",
+      "name": "Brice",
+      "last": "Johnson", 
       "number": "11",
       "position": "Forward",
       "height": "6'9",
@@ -112,7 +131,9 @@
       "hometown": "Orangeburg, S.C.",
       "high": "Edisto",
       "major": "Undeclared",
-      "bio": "PERSONAL: Born Jonathan Brice Johnson on June 27, 1994, in Orangeburg, S.C. ? Son of Herman and Renee Johnson ? Has yet to declare a major."
+       "photo": "img/players/BJohnson.gif", 
+      "bio": "Born Jonathan Brice Johnson on June 27, 1994, in Orangeburg, S.C. Son of Herman and Renee Johnson. Has yet to declare a major.", 
+       "career": "Freshman forward hopes to contribute on the Tar Heel frontline after the departure of 2011-12 starters Harrison Barnes, John Henson and Tyler Zeller to the NBA.Won Gatorade South Carolina Boys Basketball Player of the Year honors as a junior and senior. Parade All-America. Averaged 25.4 points, 14.3 rebounds, 8.3 blocks and three assists per game as a senior. Led Edisto to a 15-5 record and the second round of the Class 2-A Tournament. Averaged 23 points, 15 rebounds and five blocks in 2011. Played for his dad at Edisto High School in Cordova, S.C. Played in the Jordan Brand Classic. Two-time state champion in the high jump. Also played one year as a wide receiver. Member of the National Honor Society and Fellowship of Christian Athletes. "
   }
 },
 
@@ -120,7 +141,8 @@
   "pk": "8",
     "model": "team.Player",
     "fields": {
-      "name": "Desmond Hubert",
+      "name": "Desmond",
+      "last": "Hubert", 
       "number": "14",
       "position": "Forward",
       "height": "6'9.5",
@@ -129,15 +151,18 @@
       "hometown": "Cream Ridge, N.J.",
       "high": "New Egypt",
       "major": "Undeclared",
-      "bio": "PERSONAL: Desmond Jackson Hubert was born July 15, 1992, in Willingboro, N.J. ? Has yet to declare a major."
-  }
+       "photo": "img/players/DHubert.gif", 
+      "bio": "Desmond Jackson Hubert was born July 15, 1992, in Willingboro, N.J. Has yet to declare a major.", 
+      "career": "A reserve last season who will need to contribute more after the departure of John Henson, Tyler Zeller and Harrison Barnes (the entire starting UNC frontline in 2011-12) to the NBA. Played in 25 games as a freshman in 2011-12. Rebounded and defended well. Scored 17 points, grabbed 37 rebounds and blocked seven shots. Scored a season-high four points against Clemson. Grabbed eight rebounds against Evansville."
+}
 },
 
 {
   "pk": "9",
     "model": "team.Player",
     "fields": {
-      "name": "P.J. Hairston",
+      "name": "P.J.",
+      "last": "Hairston", 
       "number": "15",
       "position": "Guard",
       "height": "6'5.5",
@@ -146,7 +171,9 @@
       "hometown": "Greensboro, N.C.",
       "high": "Hargrave Military Academy (Va.)/Dudley",
       "major": "Undeclared",
-      "bio": "PERSONAL: Samuel Peterson Hairston Jr. is the son of Wendy Mailey and William Turner ? Born on Dec. 24, 1992, in Greensboro ? Has yet to declare a major."
+       "photo": "img/players/PHairston.gif", 
+      "bio": "Samuel Peterson Hairston Jr. is the son of Wendy Mailey and William Turner. Born on Dec. 24, 1992, in Greensboro. Has yet to declare a major.",
+      "career": "Scored all 13 of his points in the second half of the ACC Tournament championship game vs. Florida State. Hit three three-pointers and went 4 for 4 from the free throw line. Was his first game in double figures and his most three-pointers since New Year?s Day against Monmouth. First time with multiple threes since Jan. 29 against Georgia Tech. Scored nine points against Maryland in the quarterfinals, his highest scoring output in 16 games. Had an impressive rebound dunk in the win at Duke. Scored five of UNC?s 28 second-half points in the win at Virginia ? scored on an offensive rebound putback to cut Virginia?s lead to two, then nailed a three-pointer with 11:14 to play to give Carolina its first lead of the second half. First-half three-pointer at NC State ended a five-game streak without a three. Offensive rebound basket at Miami gave Carolina its first second-half lead. Had a key offensive rebound and putback basket in the win at Maryland. Had eight points, two assists and two steals against Georgia Tech, the first time he had made multiple three-pointers since the ACC opener against Boston College. Scored 16 points against Monmouth, making 4 of 9 from three-point range. Grabbed a season-high six rebounds against Elon. Made 10 of 12 free throws against Appalachian State. Sprained his right ankle and was limited to nine minutes against Evansville"
   }
 },
 
@@ -154,7 +181,8 @@
   "pk": "10",
     "model": "team.Player",
     "fields": {
-      "name": "Jackson Simmons",
+      "name": "Jackson",
+      "last": "Simmons", 
       "number": "21",
       "position": "Forward",
       "height": "6'7",
@@ -163,7 +191,10 @@
       "hometown": "Webster, N.C.",
       "high": "Smoky Mountain",
       "major": "Undeclared",
-      "bio": "PERSONAL: Son of Si and Cindi Simmons, both of whom teach at Smoky Mountain High ? Both parents played basketball at Western Carolina University and Cindi is a member of the WCU Athletic Hall of Fame ? Cindi also is a four-time state championship coach in both volleyball and basketball ? Jackson had a grade point average of 4.2 and was a member of the National Honor Society ? A member of the show choir that won three national championships ? Took part in the school play in 2010-11 ? Has yet to declare a major."
+       "photo": "img/players/JSimmons.gif", 
+      "bio": "Son of Si and Cindi Simmons, both of whom teach at Smoky Mountain High. Both parents played basketball at Western Carolina University and Cindi is a member of the WCU Athletic Hall of Fame. Cindi also is a four-time state championship coach in both volleyball and basketball. Jackson had a grade point average of 4.2 and was a member of the National Honor Society. A member of the show choir that won three national championships. Took part in the school play in 2010-11. Has yet to declare a major.",
+      "career":"Reserve forward who added 15 pounds to his frame in his first year at Carolina. The Western North Carolina Player of the Year in 2011 by the Asheville Citizen-Times. Associated Press all-state selection in 2011. Played for Coach Jimmy Cleaveland. Set the North Carolina high school record for career rebounds with 1,554 and was the leading scorer in Smoky Mountain High School history with 1,916 points. Averaged 25.4 points and 16.9 rebounds per game as a senior. Two-year team captain. Led Smoky Mountain to a 26-1 record and conference title. Shot 89 percent from the free throw line. Earned MVP honors with 19 points and 15 rebounds in the North Carolina East-West All-Star Game. Also played in the Jordan Brand Classic in Charlotte. Averaged 19.9 points and 12.5 rebounds as a junior. "
+      
   }
 },
 
@@ -171,7 +202,8 @@
   "pk": "11",
     "model": "team.Player",
     "fields": {
-      "name": "Frank Tanner",
+      "name": "Frank",
+      "last": "Tanner" , 
       "number": "22",
       "position": "Forward",
       "height": "6'4",
@@ -180,7 +212,9 @@
       "hometown": "Charlotte, N.C.",
       "high": "Hickory Ridge",
       "major": "Business Administration",
-      "bio": "PERSONAL: Frank James Tanner is the son of J. & Janice Tanner ... Is the younger brother of former Tar Heel walk-on J.B. Tanner, who played two seasons of varsity ball and won an NCAA championship with the 2009 team ... J.B. Tanner is now the director of basketball operations at UNC Greensboro under former Tar Heel and UNCG head coach Wes Miller ... Born on September 22, 1990, in Oklahoma City, Okla. ... Majoring in business administration with a concentration in finance."
+       "photo": "img/players/FTanner.gif", 
+      "bio": "Frank James Tanner is the son of J. & Janice Tanner.  Is the younger brother of former Tar Heel walk-on J.B. Tanner, who played two seasons of varsity ball and won an NCAA championship with the 2009 team. J.B. Tanner is now the director of basketball operations at UNC Greensboro under former Tar Heel and UNCG head coach Wes Miller. Born on September 22, 1990, in Oklahoma City, Okla. Majoring in business administration with a concentration in finance.",
+       "career": "A walk-on who joined the varsity team in October 2012. A two-year veteran of the UNC junior varsity program. Played JV ball as a freshman and sophomore. Led the JV squad in scoring as a sophomore in 2010-11 at 14 points per game. Played three years of varsity basketball, with the last two years as part of the first graduating class at Hickory Ridge High School in Charlotte. Averaged 20 points and seven rebounds per game as a senior. Named a North Carolina Scholar-Athlete in each of his last three years of high school. Named one of the top 150 shooting guards in the nation by ESPNU in 2009. Team captain. Graduated second in a class of 250 with a 4.8 GPA. Member of the National Honor Society and Beta Club. Won a merit-based scholarship from the N.C. State Employees Credit Union."
   }
 },
 
@@ -188,7 +222,8 @@
   "pk": "12",
     "model": "team.Player",
     "fields": {
-      "name": "J.P. Tokoto",
+      "name": "J.P.",
+      "last": "Tokoto", 
       "number": "25",
       "position": "Forward",
       "height": "6'5",
@@ -197,15 +232,18 @@
       "hometown": "Menomonee Falls, Wisc.",
       "high": "Menomonee Falls",
       "major": "Undeclared",
-      "bio": "PERSONAL: Born Jean-Pierre Tokoto on September 15, 1993, in Rockford, Ill. ? His parents are Trevor and Laurence Trimble ? Played soccer until age 13, when he first began to play basketball ? His grandfather, J.P. Tokoto, played for the Cameroon national soccer team ? Undeclared major."
-  }
+       "photo": "img/players/JTokoto.gif", 
+      "bio": "Born Jean-Pierre Tokoto on September 15, 1993, in Rockford, Ill. His parents are Trevor and Laurence Trimble Played soccer until age 13, when he first began to play basketball. His grandfather, J.P. Tokoto, played for the Cameroon national soccer team. Undeclared major.",
+    "career": "Athletic wing who hopes to contribute at small forward this season. Played for coach Dan Leffel at Menomonee Falls High School. Three-time first-team all-state selection. Two-time team captain. Averaged 24.6 points, 11.5 rebounds, 3.5 assists and 2.6 steals as a senior. Set a dozen school records, including career scoring (mark that had been held for the previous 19 seasons), rebounding and steals. Career stats included 1,737 points and 1,014 rebounds. Set the school?s single-game record with 48 points against Catholic Memorial. Averaged 21.2 points, 13.2 rebounds, 3.2 steals and 2.1 assists as a junior and earned Greater Metro Conference Player of the Year honors. Won the 2012 American Family Insurance Slam Dunk contest in New Orleans."
+}
 },
 
 {
   "pk": "13",
     "model": "team.Player",
     "fields": {
-      "name": "James Manor",
+      "name": "James",
+      "last": "Manor", 
       "number": "30",
       "position": "Forward",
       "height": "6'6",
@@ -214,7 +252,9 @@
       "hometown": "Carrboro, N.C.",
       "high": "Chapel Hill",
       "major": "Business Administration",
-      "bio": "PERSONAL: James William Manor is the son of Jim and Linda Manor ... Born on January 6, 1992, in Carrboro, N.C. ... Majoring in business administration."
+       "photo": "img/players/JManor.gif", 
+      "bio": "James William Manor is the son of Jim and Linda Manor. Born on January 6, 1992, in Carrboro, N.C. Majoring in business administration.",
+   "career": "A walk-on who joined the varsity team in October 2012. A two-year veteran of the UNC junior varsity program. Played JV ball as a freshman and sophomore. Played four years of varsity basketball at Chapel Hill High School as a power forward. Named all-conference for the Carolina 6 Conference and all-district for district 6 as a senior. Also played two years of varsity lacrosse.  Team captain of the basketball squad.  Member of the National Honor Society."
   }
 },
 
@@ -222,7 +262,8 @@
   "pk": "14",
     "model": "team.Player",
     "fields": {
-      "name": "Denzel Robinson",
+      "name": "Denzel",
+      "last": "Robinson", 
       "number": "34",
       "position": "Forward",
       "height": "6'4",
@@ -231,7 +272,9 @@
       "hometown": "Chapel Hill, N.C.",
       "high": "Chapel Hill",
       "major": "Communications",
-      "bio": "PERSONAL: Denzel Amir Robinson is the son of Steve and Lisa Robinson ... His father is a longtime assistant to Roy Williams and former head coach at Tulsa and Florida State ... His older brother played baseball at UNC and Brevard College ... His younger sister plays volleyball and competes in Track and Field at Lenoir-Rhyne University ... Born on March 20, 1991, in Lawrence, Kan. ... Majoring in Communication Studies."
+       "photo": "img/players/DRobinson.gif", 
+      "bio": "Denzel Amir Robinson is the son of Steve and Lisa Robinson. His father is a longtime assistant to Roy Williams and former head coach at Tulsa and Florida State. His older brother played baseball at UNC and Brevard College. His younger sister plays volleyball and competes in Track and Field at Lenoir-Rhyne University. Born on March 20, 1991, in Lawrence, Kan. Majoring in Communication Studies.",
+   "career": "A walk-on who joined the varsity team in October 2012. A two-year veteran of the UNC junior varsity program. Played JV ball as a freshman and sophomore. Played four years of varsity basketball at Chapel Hill High School for Paul Kieckbusch and Tod Morgan. Averaged 10.4 points, 6.8 rebounds and 2.3 assists per game as a senior. Two-time all-conference choice. Named third-team all-district as a junior. An academic all-conference selection."
   }
 },
 
@@ -239,7 +282,8 @@
   "pk": "15",
     "model": "team.Player",
     "fields": {
-      "name": "Reggie Bullock",
+      "name": "Reggie",
+      "last": "Bullock" , 
       "number": "35",
       "position": "Guard",
       "height": "6'7",
@@ -248,7 +292,9 @@
       "hometown": "Kinston, N.C.",
       "high": "Kinston",
       "major": "Communications",
-      "bio": "PERSONAL: Reginald Ryedell Bullock is the son of Danielle Long ? Born March 16, 1991, in Baltimore, Md. ? Majoring in communication studies ? Last name is pronounced BULL-lock."
+       "photo": "img/players/RBullock.gif", 
+      "bio": "Reginald Ryedell Bullock is the son of Danielle Long. Born March 16, 1991, in Baltimore, Md. Majoring in communication studies ? Last name is pronounced BULL-lock.",
+   "career": "Led UNC in three-pointers made with 71 and three-point percentage at .382 (making 71 for 186). Was the fourth-leading scorer (8.8 ppg) on the team. Moved into the starting lineup on Jan. 26th after the season-ending injury to Dexter Strickland. Tar Heels went 16-3 after he became a starter. Averaged 8.4 points coming off the bench in the first 19 games and 9.3 points in the 19 games after moving into the starting lineup. Averaged more than 32 minutes over the last 19 games ? had not played more than 24 minutes in a college game until Strickland?s injury. Scored in double figures 19 times including eight of the last 13 games and 11 of the last 19. Made multiple three-pointers in 22 games. Made 71 of UNC?s 194 three-point baskets (36.6 percent). Was second on the team with seven defensive player of the game awards (Michigan State, Monmouth, Miami, NC State, Georgia Tech, Duke and at NC State). Went to the free throw line in 11 games. Made a career-high five free throws in six attempts against Florida State in the ACC Tournament championship game. "
   }
 },
 
@@ -256,7 +302,8 @@
   "pk": "16",
     "model": "team.Player",
       "fields": {
-      "name": "James Michael McAdoo",
+      "name": "James Michael",
+      "last": "McAdoo" , 
       "number": "43",
       "position": "Forward",
       "height": "6'9",
@@ -265,8 +312,9 @@
       "hometown": "Norfolk, Va.",
       "high": "Norfolk Christian",
       "major": "Undeclared",
-      "bio": "PERSONAL: Born James Michael Ray McAdoo on Jan. 4, 1993, in Norfolk ? Son of Ronnie and Janet McAdoo ? Both parents played professional basketball overseas ? His father is a member of Old Dominion University's Hall of Fame and played professionally in France, Spain and Japan ? His sister played basketball at UNC Charlotte ? Ronnie McAdoo is a second cousin of former Tar Heel All-America and Naismith Hall of Famer Bob McAdoo ?  Has yet to declare a major."
-    
+       "photo": "img/players/JMcAdo.gif", 
+      "bio": "Born James Michael Ray McAdoo on Jan. 4, 1993, in Norfolk. Son of Ronnie and Janet McAdoo. Both parents played professional basketball overseas. His father is a member of Old Dominion University's Hall of Fame and played professionally in France, Spain and Japan. His sister played basketball at UNC Charlotte. Ronnie McAdoo is a second cousin of former Tar Heel All-America and Naismith Hall of Famer Bob McAdoo.  Has yet to declare a major.",
+   "career": "Had six points and four rebounds and was UNC?s defensive player of the game in win at Duke. Scored two key baskets ? the first on an offensive rebound slam that gave Carolina a 20-5 lead and another offensive rebound and bucket that gave UNC a 15-point lead with 3:02 to play. Played his finest game in conference action in the home win against Virginia as he had nine points, seven rebounds, two steals and an assist in 18 minutes. Played well in the loss to Duke, scoring six points and grabbing three rebounds. Scored nine points and grabbed 10 rebounds in the first five ACC games, then had nine points and six boards in the Jan. 29 win over Georgia Tech. Had seven rebounds in 11 minutes against Boston College. Grabbed a season-high nine rebounds against Monmouth. Posted a season-high 14 points and added seven rebounds against Nicholls. Scored in double figures for the first time with 10 points and grabbed a season-high five rebounds against Mississippi Valley State. Had four points and three rebounds in his collegiate debut against Michigan State."
     
   }
 }
