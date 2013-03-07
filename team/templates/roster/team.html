@@ -31,7 +31,7 @@
  <p style="color:rgb(224, 224, 224);font-size:54px; padding-top:20px; margin-left:20px;font-family: 'League';"> PLAYER ROSTER</p>
 
    
-<table id="background-image" style="background-image:url('{{STATIC_URL}}img/table.gif'); background-repeat:no-repeat; background-position: bottom center; opacity:.8;"> 
+<table id="background-image" style="background-image:url('{{STATIC_URL}}img/table.gif'); background-repeat:no-repeat; background-position: center; opacity:.8;"> 
     <thead>
     	<tr>
 	    <th scope="col">#</th>
@@ -44,11 +44,13 @@
 	    
         </tr>
     </thead>
+
       <tbody>
 	
-    	{{ htmlVar|safe }}
-	
+	 {{ htmlVar|safe }} 
+
     </tbody>
+
     <tfoot>
     	<tr>
             <th> </th>
@@ -65,11 +67,14 @@
 </div>
 
 
-<div class="teamTwitter">
-    <h4> Twitter Feed</h4>
+<div class="teamInstagram">
+   <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198); font-family: 'League'; font-size:32px;"> #CAROLINABASKETBALL<br/> INSTAGRAM FEED</p>
     
+   <iframe src="http://snapwidget.com/in/?h=Y2Fyb2xpbmFiYXNrZXRiYWxsfGlufDg1fDN8Nnx8eWVzfDV8ZmFkZU91dA==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:300px; height: 600px" ></iframe>
 </div>
-<div style="clear:both;"></div>
+
+
+
 
 <div class="teamHeadlines">
     <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198); font-family: 'League'; font-size:32px;"> HEADLINES</p>
@@ -185,10 +190,6 @@
 </div>
 <div style="clear:both;"></div>
  
-<div class="Instagram">
- <p style="border-bottom: 1px solid rgb(204, 204, 204); color: rgb(198, 198, 198);font-family: 'League'; font-size:32px;">#CAROLINABASKETBALL INSTAGRAM FEED</p>
-<iframe src="http://snapwidget.com/in/?h=Y2Fyb2xpbmFiYXNrZXRiYWxsfGlufDExMHw3fDN8fHllc3w1fGZhZGVPdXQ=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:875px; height: 375px" ></iframe>
-</div>
 
 
        
