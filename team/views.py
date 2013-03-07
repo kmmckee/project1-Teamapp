@@ -17,7 +17,7 @@ def team(request, pk):
     teamList = tempTeam.players.all()
     htmlVar = ""
     for i in teamList:
-       htmlVar += "<tr><td>" + str(i.number) + "</td><td>" + "<a href='#'>" + i.name + "</a></td><td>" + i.last + "</td><td>" + i.position + "</td><td>" + i.height + "</td><td>" + i.weight + "</td><td>" + i.year + "</td></tr>"
+       htmlVar += "<tr><td>" + str(i.number) + "</td><td>" + "<a href='{% url 'team_players' i.id %}'>" + i.name + "</a></td><td>" + i.last + "</td><td>" + i.position + "</td><td>" + i.height + "</td><td>" + i.weight + "</td><td>" + i.year + "</td></tr>"
     
         
     context = {
