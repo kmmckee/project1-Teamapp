@@ -14,10 +14,11 @@ def team(request, pk):
     team = get_object_or_404(Team, id=pk)
     
     tempTeam = Team.objects.get(id=pk)
-    teamList = tempTeam.players.all()
+    teamList = tempTeam.players.all().order_by('number')
+
     htmlVar = ""
     for i in teamList:
-       htmlVar += "<tr><td>" + str(i.number) + "</td><td>" + "<a href='{% url 'team_players' i.id %}'>" + i.name + "</a></td><td>" + i.last + "</td><td>" + i.position + "</td><td>" + i.height + "</td><td>" + i.weight + "</td><td>" + i.year + "</td></tr>"
+       htmlVar += "<tr><td>" + str(i.number) + "</td><td>" + "<a href='http://127.0.0.1:8000/player/" + str(i.id) + "'>" + i.name + "</a></td><td>" + i.last + "</td><td>" + i.position + "</td><td>" + i.height + "</td><td>" + i.weight + "</td><td>" + i.year + "</td></tr>"
     
         
     context = {

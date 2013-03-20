@@ -4,7 +4,7 @@ from django.db import models
 class Player(models.Model):
     name = models.CharField(unique=True, max_length=50)
     last = models.CharField(unique=True, max_length=50)
-    number = models.CharField(unique=True, max_length=3)
+    number = models.IntegerField(unique=True, null=True, max_length=3)
     position = models.CharField(unique=False, max_length=12)
     height = models.CharField(unique=False, max_length=12)
     weight = models.CharField(unique=False, max_length=12)
